@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BooksHub.Migrations
 {
     [DbContext(typeof(BooksHubDbContext))]
-    [Migration("20220214113306_intial")]
-    partial class intial
+    [Migration("20220214123005_Second")]
+    partial class Second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,8 +25,11 @@ namespace BooksHub.Migrations
 
             modelBuilder.Entity("BooksHub.Models.Book", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<string>("AuthorName")
                         .IsRequired()

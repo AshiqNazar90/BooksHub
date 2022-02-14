@@ -23,8 +23,11 @@ namespace BooksHub.Migrations
 
             modelBuilder.Entity("BooksHub.Models.Book", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<string>("AuthorName")
                         .IsRequired()

@@ -1,10 +1,13 @@
 using BooksHub.Data;
+using BooksHub.Services;
+using BooksHub.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IBookService,BookService>();
 
 builder.Services.AddDbContext<BooksHubDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("default")));

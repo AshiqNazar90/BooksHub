@@ -4,7 +4,7 @@
 
 namespace BooksHub.Migrations
 {
-    public partial class intial : Migration
+    public partial class Second : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace BooksHub.Migrations
                 name: "Books",
                 columns: table => new
                 {
-                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     BookName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AuthorName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false)
