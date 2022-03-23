@@ -4,7 +4,7 @@
 
 namespace BooksHub.Migrations
 {
-    public partial class Second : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

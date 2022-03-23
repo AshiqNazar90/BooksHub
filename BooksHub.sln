@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApp", "ConsoleApp", "{EA11609C-9A67-4E3D-A8A0-95C4C3284581}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BooksHubWebApi", "BooksHubWebApi", "{8E50CE51-FB14-47D3-96DB-6EC19662C909}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BooksHubWebsite", "BooksHubWebsite", "{8DC80241-659F-472E-8B21-BA52888DDE1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksHub", "BooksHub\BooksHub.csproj", "{677635E9-5449-44EB-931A-7880DACDB4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksHub", "BooksHub\BooksHub.csproj", "{677635E9-5449-44EB-931A-7880DACDB4A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

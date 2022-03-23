@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BooksHub.Migrations
 {
     [DbContext(typeof(BooksHubDbContext))]
-    [Migration("20220214123005_Second")]
-    partial class Second
+    [Migration("20220215090753_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
